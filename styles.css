@@ -17,3 +17,13 @@ body {
     max-width: 400px;
     width: 100%;
 }
+h1 {
+    color: #ff7f50;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
