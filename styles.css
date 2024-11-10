@@ -40,3 +40,25 @@ input[type="text"], select {
     margin: 5px 0;
     cursor: pointer;
 }
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ff7f50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6f3d;
+}
+
+#orderSummary {
+    margin-top: 20px;
+    background: #ffecd2;
+    padding: 15px;
+    border-radius: 10px;
+}
