@@ -12,3 +12,24 @@
         <form id="smoothieForm">
             <label for="name">Smoothie Name:</label>
             <input type="text" id="name" placeholder="E.g., Tropical Delight" required>
+            
+            <label for="size">Size:</label>
+            <select id="size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label>Ingredients:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="ingredients" value="Banana"> Banana ($0.50)</label>
+                <label><input type="checkbox" name="ingredients" value="Strawberry"> Strawberry ($0.75)</label>
+                <label><input type="checkbox" name="ingredients" value="Blueberry"> Blueberry ($0.85)</label>
+                <label><input type="checkbox" name="ingredients" value="Mango"> Mango ($1.00)</label>
+                <label><input type="checkbox" name="ingredients" value="Spinach"> Spinach ($0.60)</label>
+                <label><input type="checkbox" name="ingredients" value="Kale"> Kale ($0.70)</label>
+                <label><input type="checkbox" name="ingredients" value="AlmondMilk"> Almond Milk ($1.00)</label>
+                <label><input type="checkbox" name="ingredients" value="CoconutWater"> Coconut Water ($0.80)</label>
+                <label><input type="checkbox" name="ingredients" value="Honey"> Honey ($0.30)</label>
+                <label><input type="checkbox" name="ingredients" value="ProteinPowder"> Protein Powder ($1.50)</label>
+            </div>
