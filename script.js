@@ -11,3 +11,12 @@ const ingredientPrices = {
     Honey: 0.3,
     ProteinPowder: 1.5
 };
+// Smoothie class with pricing feature
+class Smoothie {
+    constructor(name, size, ingredients, sweetness) {
+        this.name = name;
+        this.size = size;
+        this.ingredients = ingredients;
+        this.sweetness = sweetness;
+        this.price = this.calculatePrice();
+    }
