@@ -41,3 +41,16 @@ class Smoothie {
         `;
     }
 }
+// Function to handle order submission
+function submitOrder(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const size = document.getElementById("size").value;
+    const sweetness = document.getElementById("sweetness").value;
+    const ingredients = Array.from(document.querySelectorAll('input[name="ingredients"]:checked')).map(input => input.value);
+
+    const smoothie = new Smoothie(name, size, ingredients, sweetness);
+    document.getElementById("orderSummary").innerHTML = smoothie.getOrderSummary();
+}
+
+document.getElementById("smoothieForm").addEventListener("submit", submitOrder);
